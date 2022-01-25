@@ -4,7 +4,6 @@ namespace App\Twig;
 
 use App\Entity\User;
 use App\Service\UploaderHelper;
-use JetBrains\PhpStorm\Pure;
 use Psr\Container\ContainerInterface;
 use Symfony\Contracts\Service\ServiceSubscriberInterface;
 use Twig\Extension\AbstractExtension;
@@ -15,8 +14,6 @@ class AppExtension extends AbstractExtension implements ServiceSubscriberInterfa
 {
     public function __construct(private ContainerInterface $container)
     {
-    // public function __construct(private UploaderHelper $uploaderHelper)
-    // {
     }
 
     public function getFunctions(): array
@@ -37,7 +34,6 @@ class AppExtension extends AbstractExtension implements ServiceSubscriberInterfa
         ];
     }
 
-    #[Pure]
     public function getRoleName(
         $value
     ): string {
@@ -48,9 +44,6 @@ class AppExtension extends AbstractExtension implements ServiceSubscriberInterfa
     {
         return $this->container
             ->get(UploaderHelper::class)
-            ->getPublicPath($path);
-
-        return $this->uploaderHelper
             ->getPublicPath($path);
     }
 
