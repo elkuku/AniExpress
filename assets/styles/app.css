@@ -50,3 +50,9 @@ form.form-nomargin {
 .drag-handle {
     cursor: grab;
 }
+
+.tag-list {
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 1.3em;
+}

@@ -1,0 +1,5 @@
+<div class="tag-list">
+    {% for tag in tagList.findBy([], {'name': 'ASC'}) %}
+        <a href="{{ path('app_catalog_by_tag', {'name': tag.name}) }}">{{ tag.name }}</a>
+    {% endfor %}
+</div>

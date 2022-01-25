@@ -1,14 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
+{% block title %}Welcome!{% endblock %}
 
 {% block body %}
-    <div class="example-wrapper">
-
-        {% for tag in tags %}
-            <a href="{{ path('app_catalog_by_tag', {'name': tag.name}) }}">{{ tag.name }}</a>
-
-        {% endfor %}
-
-    </div>
+    <h1>Welcome...</h1>
 {% endblock %}

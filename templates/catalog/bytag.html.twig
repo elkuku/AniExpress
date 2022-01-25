@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
+{% block title %}Catalog: {{ tag.name }}{% endblock %}
 
 {% block body %}
+
     <h1>{{ tag.name }}</h1>
+
     <div class="example-wrapper">
 
         {% for store in tag.stores %}
@@ -13,11 +15,8 @@
                     {{ store.name }}
                 </a>
             </h2>
-{#            <img class="store-img" src="{{ uploaded_asset(store.imagePath) }}">#}
-
-{#            <img class="store-img" src="{{ uploaded_asset(store.imagePath)|imagine_filter('squared_thumbnail_small') }}">#}
-            {#            <a href="{{ path('app_catalog_by_tag', {'id': tag.id}) }}">{{ tag.name }}</a>#}
-
+        {% else %}
+            <h3>No items found.</h3>
         {% endfor %}
 
     </div>
