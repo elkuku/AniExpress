@@ -32,7 +32,7 @@ before_script:
 
 script:
   - SYMFONY_DEPRECATIONS_HELPER=disabled ./bin/phpunit $PHPUNIT_FLAGS
-#  - cat ./var/log/test.log
+  - cat ./var/log/test.log || true
 
 #after_script:
 #  - ./bin/console TravisFinishedNofitication
