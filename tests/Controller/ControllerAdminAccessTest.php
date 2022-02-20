@@ -34,8 +34,13 @@ class ControllerAdminAccessTest extends WebTestCase
             'user_edit'                => [
                 'statusCodes' => ['GET' => 200, 'POST' => 200],
             ],
-            'connect_google_api_token' => [
+            'app_catalog_by_tag' => [
                 'statusCodes' => ['GET' => 200],
+                'routeParams' => ['{name}' => 'Pollo']
+            ],
+            'app_catalog_store' => [
+                'statusCodes' => ['GET' => 200],
+                'routeParams' => ['{name}' => 'KFC']
             ],
         ];
 
@@ -100,6 +105,20 @@ class ControllerAdminAccessTest extends WebTestCase
 
             $methods = $route->getMethods() ?: ['GET'];
             $path = str_replace('{id}', $defaultId, $route->getPath());
+
+            if (array_key_exists($routeName, $this->exceptions)
+                && array_key_exists(
+                    'routeParams',
+                    $this->exceptions[$routeName]
+                )
+            ) {
+                foreach (
+                    $this->exceptions[$routeName]['routeParams'] as $routeParam => $replacement
+                ) {
+                    $path = str_replace($routeParam, $replacement, $path);
+                }
+            }
+
             $out = false;
             foreach ($methods as $method) {
                 $expectedStatusCode = 302;

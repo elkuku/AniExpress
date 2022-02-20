@@ -23,6 +23,14 @@ class ControllerAccessTest extends WebTestCase
             'connect_google_api_token' => [
                 'statusCodes' => ['GET' => 200],
             ],
+            'app_catalog_by_tag' => [
+                'statusCodes' => ['GET' => 200],
+                'routeParams' => ['{name}' => 'Pollo']
+            ],
+            'app_catalog_store' => [
+                'statusCodes' => ['GET' => 200],
+                'routeParams' => ['{name}' => 'KFC']
+            ],
         ];
 
     /**
@@ -83,6 +91,19 @@ class ControllerAccessTest extends WebTestCase
             }
 
             $path = str_replace('{id}', $defaultId, $route->getPath());
+
+            if (array_key_exists($routeName, $this->exceptions)
+                && array_key_exists(
+                    'routeParams',
+                    $this->exceptions[$routeName]
+                )
+            ) {
+                foreach (
+                    $this->exceptions[$routeName]['routeParams'] as $routeParam => $replacement
+                ) {
+                    $path = str_replace($routeParam, $replacement, $path);
+                }
+            }
             $out = false;
             foreach ($methods as $method) {
                 $expectedStatusCode = 302;
