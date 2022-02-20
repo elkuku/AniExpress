@@ -1263,7 +1263,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/stimulus@npm:^3.0.1":
+"@hotwired/stimulus@npm:^3.0.0, @hotwired/stimulus@npm:^3.0.1":
   version: 3.0.1
   resolution: "@hotwired/stimulus@npm:3.0.1"
   checksum: 2c7a36dedb4935aa31924d0b467e5376ba16d18834c36f3199c447b7e2131d9c40fb9b4428d37354fe7c2c19969b32cde0fa08dc0e885c9ad776ed81172cf5e1
@@ -1383,7 +1383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@symfony/ux-dropzone@file:vendor/symfony/ux-dropzone/Resources/assets#vendor/symfony/ux-dropzone/Resources/assets::hash=2c0b73&locator=root-workspace-0b6124%40workspace%3A.":
+"@symfony/ux-dropzone@file:vendor/symfony/ux-dropzone/Resources/assets::locator=root-workspace-0b6124%40workspace%3A.":
   version: 1.1.0
   resolution: "@symfony/ux-dropzone@file:vendor/symfony/ux-dropzone/Resources/assets#vendor/symfony/ux-dropzone/Resources/assets::hash=2c0b73&locator=root-workspace-0b6124%40workspace%3A."
   peerDependencies:
@@ -5986,10 +5986,10 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@hotwired/stimulus": ^3.0.1
+    "@hotwired/stimulus": ^3.0.0
     "@popperjs/core": ^2.11.2
     "@symfony/stimulus-bridge": ^3.0.0
-    "@symfony/ux-dropzone": "file:vendor/symfony/ux-dropzone/Resources/assets#vendor/symfony/ux-dropzone/Resources/assets::hash=2c0b73&locator=root-workspace-0b6124%40workspace%3A."
+    "@symfony/ux-dropzone": "file:vendor/symfony/ux-dropzone/Resources/assets"
     "@symfony/webpack-encore": ^1.8.1
     bootstrap: ^5.1.3
     bootstrap-icons: ^1.8.1
