@@ -1,4 +1,16 @@
 {
+    "license": "WTFPL",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "engines": {
+        "node": "17.x",
+        "yarn": "2.x"
+    },
     "devDependencies": {
         "@hotwired/stimulus": "^3.0.1",
         "@popperjs/core": "^2.11.2",
@@ -20,16 +32,5 @@
         "stimulus-use": "^0.41.0",
         "sweetalert2": "^11.4.4",
         "webpack-notifier": "^1.15.0"
-    },
-    "license": "UNLICENSED",
-    "private": true,
-    "scripts": {
-        "dev-server": "encore dev-server",
-        "dev": "encore dev",
-        "watch": "encore dev --watch",
-        "build": "encore production --progress"
-    },
-    "engines": {
-        "node": "14.x"
     }
 }
