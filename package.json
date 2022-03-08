@@ -8,8 +8,7 @@
         "build": "encore production --progress"
     },
     "engines": {
-        "node": "17.x",
-        "yarn": "2.x"
+        "node": "17.x"
     },
     "devDependencies": {
         "@hotwired/stimulus": "^3.0.1",
