@@ -1263,7 +1263,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/stimulus@npm:^3.0.0, @hotwired/stimulus@npm:^3.0.1":
+"@hotwired/stimulus@npm:^3.0.1":
   version: 3.0.1
   resolution: "@hotwired/stimulus@npm:3.0.1"
   checksum: 2c7a36dedb4935aa31924d0b467e5376ba16d18834c36f3199c447b7e2131d9c40fb9b4428d37354fe7c2c19969b32cde0fa08dc0e885c9ad776ed81172cf5e1
@@ -1383,7 +1383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@symfony/ux-dropzone@file:vendor/symfony/ux-dropzone/Resources/assets::locator=root-workspace-0b6124%40workspace%3A.":
+"@symfony/ux-dropzone@file:vendor/symfony/ux-dropzone/Resources/assets#vendor/symfony/ux-dropzone/Resources/assets::hash=2c0b73&locator=root-workspace-0b6124%40workspace%3A.":
   version: 1.1.0
   resolution: "@symfony/ux-dropzone@file:vendor/symfony/ux-dropzone/Resources/assets#vendor/symfony/ux-dropzone/Resources/assets::hash=2c0b73&locator=root-workspace-0b6124%40workspace%3A."
   peerDependencies:
@@ -5986,10 +5986,10 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@hotwired/stimulus": ^3.0.0
+    "@hotwired/stimulus": ^3.0.1
     "@popperjs/core": ^2.11.2
     "@symfony/stimulus-bridge": ^3.0.0
-    "@symfony/ux-dropzone": "file:vendor/symfony/ux-dropzone/Resources/assets"
+    "@symfony/ux-dropzone": "file:vendor/symfony/ux-dropzone/Resources/assets#vendor/symfony/ux-dropzone/Resources/assets::hash=2c0b73&locator=root-workspace-0b6124%40workspace%3A."
     "@symfony/webpack-encore": ^1.8.1
     bootstrap: ^5.1.3
     bootstrap-icons: ^1.8.1
@@ -6004,7 +6004,7 @@ fsevents@~2.3.2:
     sortablejs: ^1.14.0
     stimulus: ^3.0.1
     stimulus-use: ^0.41.0
-    sweetalert2: ^11.4.2
+    sweetalert2: ^11.4.4
     webpack-notifier: ^1.15.0
   languageName: unknown
   linkType: soft
@@ -6587,10 +6587,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sweetalert2@npm:^11.4.2":
-  version: 11.4.2
-  resolution: "sweetalert2@npm:11.4.2"
-  checksum: a53541ada9ef7fa7315175fa6460b26f925e8e4bdd72255efcbfaa8ac3fdb4925ed250d433ab742cde94006499962acccabac51507783bb74fee8c72f94ea532
+"sweetalert2@npm:^11.4.4":
+  version: 11.4.4
+  resolution: "sweetalert2@npm:11.4.4"
+  checksum: bd4422079b27da62b9f7e21de68c454999397f3ca07982d671a381a7da992dd491b016ee1432278abbdf69d8123bbccb476ead3880e60d0a2c1947bbf3d99ab0
   languageName: node
   linkType: hard
 
