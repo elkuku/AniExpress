@@ -181,9 +181,6 @@
     "nikic/php-parser": {
         "version": "v4.13.2"
     },
-    "ocramius/proxy-manager": {
-        "version": "2.10.0"
-    },
     "oneup/flysystem-bundle": {
         "version": "4.2",
         "recipe": {
@@ -204,9 +201,6 @@
     },
     "phar-io/version": {
         "version": "3.1.0"
-    },
-    "php": {
-        "version": "8.0"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -393,9 +387,6 @@
             "config/packages/debug.yaml"
         ]
     },
-    "symfony/debug-pack": {
-        "version": "v1.0.8"
-    },
     "symfony/dependency-injection": {
         "version": "v6.0.2"
     },
@@ -532,9 +523,6 @@
     "symfony/options-resolver": {
         "version": "v6.0.0"
     },
-    "symfony/orm-pack": {
-        "version": "v2.0.0"
-    },
     "symfony/password-hasher": {
         "version": "v6.0.2"
     },
@@ -576,9 +564,6 @@
     },
     "symfony/process": {
         "version": "v6.0.2"
-    },
-    "symfony/profiler-pack": {
-        "version": "v1.0.5"
     },
     "symfony/property-access": {
         "version": "v6.0.2"
@@ -629,9 +614,6 @@
     "symfony/serializer": {
         "version": "v6.0.2"
     },
-    "symfony/serializer-pack": {
-        "version": "v1.0.3"
-    },
     "symfony/service-contracts": {
         "version": "v3.0.0"
     },
@@ -640,9 +622,6 @@
     },
     "symfony/string": {
         "version": "v6.0.2"
-    },
-    "symfony/test-pack": {
-        "version": "v1.0.6"
     },
     "symfony/translation": {
         "version": "5.3",
@@ -675,9 +654,6 @@
             "config/packages/twig.yaml",
             "templates/base.html.twig"
         ]
-    },
-    "symfony/twig-pack": {
-        "version": "v1.0.0"
     },
     "symfony/ux-dropzone": {
         "version": "v2.0.1"
